@@ -1,0 +1,106 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1500px;
+}
+.home-picture {
+  width: 100%;
+  z-index: -1;
+  margin-bottom: -150px;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+.home-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 50px;
+}
+.home-featured {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.home-featured > h3 {
+  margin-left: 20px;
+}
+.home-featured-productDiv {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin-top: 40px;
+  margin-left: 10px;
+  width: 200px;
+  height: 200px;
+  transition: all 0.3s linear;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 10px 10px 8px #888888;
+}
+.home-arrows {
+  margin-top: 225px;
+  margin-left: 25px;
+  cursor: pointer;
+}
+.home-best-sellers {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.home-best-sellers > h3 {
+  margin-left: 40px;
+}
+.home-bestSellers-productDiv {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  margin-top: 50px;
+  width: 200px;
+  height: 200px;
+  transition: all 0.3s linear;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 10px 10px 8px #888888;
+}
+.bestSeller-arrows {
+  margin-top: 240px;
+  margin-bottom: 10px;
+  margin-left: 104px;
+  cursor: pointer;
+}
+.activeProduct {
+  transform: translateX(0);
+  overflow-y: hidden;
+}
+.nextProduct {
+  transform: translateX(150%);
+  overflow-y: hidden;
+}
+.nextNextProduct {
+  opacity: 0;
+  width: 100px;
+  transform: translateX(300%);
+  overflow-y: hidden;
+}
+.prevProduct {
+  transform: translateX(-150%);
+  overflow-y: hidden;
+}
+@media (max-width: 810px) {
+  .nextProduct {
+    opacity: 0;
+    width: 50px;
+    transform: translateX(150%);
+  }
+  .prevProduct {
+    opacity: 0;
+    width: 50px;
+    transform: translateX(-150%);
+  }
+}

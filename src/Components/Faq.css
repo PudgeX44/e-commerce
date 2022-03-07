@@ -1,0 +1,27 @@
+.faq {
+  display: flex;
+  background-color: rgb(228, 220, 220);
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 50px;
+  border-radius: 5px;
+  max-width: 600px;
+}
+.faq > h2 {
+  font-weight: 300;
+  padding: 10px;
+  margin-right: 20px;
+}
+.faq-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid black;
+}
+.faq-heading > h3 {
+  font-weight: 300;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
